@@ -9,7 +9,7 @@
 import UIKit
 import GooglePlacesAutocomplete
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GooglePlacesAutocompleteDelegate {
   let gpaViewController = GooglePlacesAutocomplete(
     apiKey: "[YOUR GOOGLE PLACES API KEY]",
     placeType: .Address
